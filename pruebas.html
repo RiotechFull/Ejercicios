@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">  
+    <head>     
+         <meta charset="UTF-8">      
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+         <meta http-equiv="X-UA-Compatible" content="ie=edge">      
+         <title>Entendiendo JavaScript y el DOM (Document Object Model)</title> 
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="shortcut icon"/>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/themify-icons.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/owl.carousel.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+
+        <!-- JavaScript -->
+         <script>
+		    //AQUÍ VA EL CÓDIGO JAVASCRIPT
+
+            
+         </script>
+    </head>  
+    <body id="p1">      
+<div class="container">
+<!-- Modificando el contenido HTML-->
+<h3> Modificando el contenido HTML </h3>
+        <p id="demo">con JavaScript podemos cambiar el contenido de HTML</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Bienvenidos a JavaScript!"'>Haga clic!</button>
+
+        <br><br><br>
+<!-- Modificando los atributos de HTML-->
+<h3>Modificando los atributos de HTML</h3>
+<h4>¿Qué puede hacer JavaScript?</h4>
+<p>JavaScript puede cambiar los valores de los atributos HTML.</p>
+<p>En este caso, JavaScript cambia el valor del atributo src (fuente) de una imagen</p>
+<button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">encender la luz</button>
+<img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">apagar la luz</button>
+
+<br><br><br>
+
+<!-- Modificando los estilos en CSS-->
+<h5 id="demo02">Texto grande</h5>
+<button type="button" onclick="document.getElementById('demo02').style.fontSize='35px'">Clic Aqui para mas grande!</button>
+
+
+<br><br><br>
+<section>
+    <button id="btn_alerta">Activar mensaje de Alerta</button>
+</section>
+<br><br><br>
+<section>
+
+    <button onclick="cambiarFondo();">Cambiar Fondo</button>
+</section>
+
+<br><br><br>
+<section>
+    <p> En este parrafo mostraremos la edad segun la fecha de nacimiento</p>
+    <p> La fecha de nacimiento ingresada es: <span id="fechaNac"></span></p>
+    <p>Tu edad es: <span id="resultado"></span> años. Bienvenid@</p> 
+    
+</section>
+<!-- otro ejemplo por consola del navegador -->
+        <script src="js/scripts.js"></script>
+</div>
+    </body>  
+</html>
